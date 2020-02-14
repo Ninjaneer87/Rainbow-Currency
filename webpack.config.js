@@ -6,9 +6,10 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-entry: {
-    main: "./src/js/jquery.js", // file name: path
-    // vendor: "./src/vendor.js" // file name: path
+    mode: "production",
+    entry: {
+        main: "./src/js/jquery.js", // file name: path
+        // vendor: "./src/vendor.js" // file name: path
     },
     output: {
         filename: "[name].[contentHash].bundle.js",
