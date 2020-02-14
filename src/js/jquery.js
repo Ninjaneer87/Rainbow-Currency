@@ -1,3 +1,4 @@
+import '../css/style.css';
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){  
     $('nav.navbar').addClass("scroll");
